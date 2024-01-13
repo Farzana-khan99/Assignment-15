@@ -97,15 +97,14 @@ if (indexWord !== -1) {
 // 6. Write a function to delete all vowels from a sentence. Assume
 // that the sentence is not more than 25 characters long.
 
-// function vowels(sentence){
-//   let word = sentence.
-// }
+function vowels(sentence){
+   return sentence.replace(/[aeiou]/gi, "")
+}
 
-let str = "This is a sample sentence with vowels"
-let words = /[aeiou]/gi;
+let str = "Pleases read this application and give me gratuity "
+let words = vowels(str);
+console.log(`${words}`)
 
-console.log(`${str.match(words).length}`)
-// console.log(word)
 
 // 7. Write a function with switch statement to count the number of
 // occurrences of any two vowels in succession in a line of text.
